@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #main_container{
+           width:400px;
+           
+           position: relative;
+           left:calc(50% - 200px)
+       }
+        #heading{
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+            
+        }
+        #label{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #ibox{
+            width: 400px;
+            height: 30px;
+            background-color: lightblue;
+            border: none;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+       #label span{
+           font-weight: lighter;
+       }
+       #gbut{
+           width: 400px;
+           height: 30px;
+           background-color:#3498DB ;
+           border: none;
+           color:white;
+       }
+       #terms{
+           color: grey;
+           font-size: 14px;
+       }
+       #navigation{
+           color: #3498DB;
+       }
+       #navigation span{
+           color: gray;
+           position: relative;
+           float: right;
+           right: 0px;
+       }
+       a{
+           color: #3498DB;
+       }
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <div id="heading">
+            <h2>Create an Account</h2>
+            <p>Create your Profile </p>
+        </div>
+        <div id="form">
+            <form action="">
+                <label id="label" for="" >Email</label><br>
+                <input id="ibox" type="text" name="email"><br>
+                <label id="label" for="">Password <span>(minimum of 8 Chars)</span></label><br>
+                <input id="ibox" type="text"  name="Password">
+                <label id="label" for="" >Name</label><br>
+                <input id="ibox" type="text" placeholder="Ex. Alaxander" name="name"> 
+                <input type="submit" value="Signup" id="gbut"> 
+            </form>
+            <p id="terms"><input type="checkbox" name="" id="">By Clicking this bla <a href="#">bla</a>a terms</p>
+            <p id="navigation">Back <span>Already Have an Account? <a href="/login">Login</a></span></p>
+        </div>
+    </div>
+</body>
+</html>
